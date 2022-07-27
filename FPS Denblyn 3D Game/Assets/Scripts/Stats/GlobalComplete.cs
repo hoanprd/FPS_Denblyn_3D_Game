@@ -9,6 +9,7 @@ public class GlobalComplete : MonoBehaviour
     public static int treasureCount;
     public GameObject killsDisplay;
     public GameObject treasureDisplay;
+    public static int nextFloor = 3;
 
     // Update is called once per frame
     void Update()

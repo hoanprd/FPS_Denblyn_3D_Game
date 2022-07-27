@@ -13,6 +13,6 @@ public class GlobalLife : MonoBehaviour
     void Update()
     {
         internalLife = lifeValue;
-        lifeDisplay.GetComponent<Text>().text = "Life: " + lifeValue;
+        lifeDisplay.GetComponent<Text>().text = "" + lifeValue;
     }
 }

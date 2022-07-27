@@ -23,6 +23,7 @@ public class HandGunPickUp : MonoBehaviour
             GetComponent<BoxCollider>().enabled = false;
             Message.SetActive(false);
             IsPickUp = false;
+            GlobalWeapons.HandGun = 1;
         }
     }
 

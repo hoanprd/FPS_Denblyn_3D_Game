@@ -12,6 +12,7 @@ public class SoldierAI : MonoBehaviour
     public bool isFiring = false;
     public float fireRate = 0.2f;
     public int getHurt;
+    public int recoil;
     public AudioSource[] hurtSound;
 
     // Update is called once per frame
@@ -40,12 +41,28 @@ public class SoldierAI : MonoBehaviour
         theSoldier.GetComponent<Animator>().Play("demo_combat_shoot");
         fireSound.Play();
         lookingAtPlayer = true;
-        GlobalHealth.healthValue -= 5;
-        hurtFlash.SetActive(true);
-        yield return new WaitForSeconds(0.05f);
-        hurtFlash.SetActive(false);
+        recoil = Random.Range(0, 3);
+        if (recoil == 0)
+        {
+            GlobalHealth.healthValue -= 5;
+            getHurt = Random.Range(0, 3);
+            hurtSound[getHurt].Play();
+            hurtFlash.SetActive(true);
+            yield return new WaitForSeconds(0.05f);
+
+            hurtFlash.SetActive(false);
+        }
+        else
+        {
+            //null
+        }
+        /*GlobalHealth.healthValue -= 5;
         getHurt = Random.Range(0, 3);
         hurtSound[getHurt].Play();
+        hurtFlash.SetActive(true);
+        yield return new WaitForSeconds(0.05f);
+
+        hurtFlash.SetActive(false);*/
         yield return new WaitForSeconds(fireRate);
 
         isFiring = false;
