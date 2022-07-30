@@ -41,6 +41,8 @@ public class GameExit : MonoBehaviour
             if (Input.GetKeyUp(KeyCode.E))
             {
                 thePlayer.GetComponent<FirstPersonController>().enabled = false;
+                GlobalWeapons.Original = 0;
+                GlobalComplete.nextFloor = 3;
                 Cursor.visible = true;
                 //Screen.lockCursor = false;
                 Cursor.lockState = CursorLockMode.None;

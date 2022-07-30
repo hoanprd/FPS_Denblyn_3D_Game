@@ -14,13 +14,26 @@ public class RecycleLevel : MonoBehaviour
         if (GlobalLife.lifeValue <= 0)
         {
             gameOver.SetActive(true);
+            GlobalWeapons.Original = 0;
+            GlobalComplete.nextFloor = 3;
+            StartCoroutine(GameOver());
         }
         else
         {
-            if (GlobalComplete.nextFloor == 2)
+            /*if (GlobalComplete.nextFloor == 2)
                 SceneManager.LoadScene(2);
             else
-                SceneManager.LoadScene(GlobalComplete.nextFloor);
+                SceneManager.LoadScene(GlobalComplete.nextFloor);*/
+            SceneManager.LoadScene(GlobalComplete.nextFloor);
         }
+    }
+
+    IEnumerator GameOver()
+    {
+        yield return new WaitForSeconds(3);
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene(1);
     }
 }

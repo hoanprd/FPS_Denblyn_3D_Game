@@ -419,7 +419,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Director: \n\nProject manager: \n\nCharacter design: \n\nAnimation: "
+  m_Text: "Director: \n\nProject manager: \n\nCharacter design: \n\nAnimation: \n\nSpecial
+    thanks: \n"
 --- !u!222 &574213828
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -464,7 +465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -915}
+  m_AnchoredPosition: {x: 0, y: -1040}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &649655504
@@ -652,7 +653,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Tu Hoang\n\nNguyen Duy Hoan\n\nNguyen Duy Hoan \n\nNguyen Duy Hoan"
+  m_Text: "Tu Hoang\n\nNguyen Duy Hoan\n\nNguyen Duy Hoan \n\nNguyen Duy Hoan\n\nJimmy
+    Vegas\nYurowm"
 --- !u!222 &1564225909
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -14,6 +14,8 @@ public class CredToMenu : MonoBehaviour
     {
         yield return new WaitForSeconds(7);
 
-        SceneManager.LoadScene(4);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene(1);
     }
 }

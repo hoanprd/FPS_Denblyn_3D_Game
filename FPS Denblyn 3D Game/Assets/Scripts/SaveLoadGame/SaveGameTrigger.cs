@@ -16,11 +16,14 @@ public class SaveGameTrigger : MonoBehaviour
         if (IsActive == true && Input.GetKeyUp(KeyCode.F))
         {
             PlayerPrefs.SetInt("SceneToLoad", GlobalComplete.nextFloor);
+            PlayerPrefs.SetInt("DiaSaved", GlobalComplete.GoToDia);
             PlayerPrefs.SetInt("HealthSaved", GlobalHealth.healthValue);
             PlayerPrefs.SetInt("LifeSaved", GlobalLife.lifeValue);
             PlayerPrefs.SetInt("ScoreSaved", GlobalScore.scoreValue);
             PlayerPrefs.SetInt("HGAmmoSaved", GlobalAmmo.handgunAmmo);
+            PlayerPrefs.SetInt("CHGAmmoSaved", GlobalAmmo.CurhandgunAmmo);
             PlayerPrefs.SetInt("MGAmmoSaved", GlobalAmmo.machinegunAmmo);
+            PlayerPrefs.SetInt("CMGAmmoSaved", GlobalAmmo.CurmachinegunAmmo);
             PlayerPrefs.SetInt("HandGunSaved", GlobalWeapons.HandGun);
             PlayerPrefs.SetInt("MachineGunSaved", GlobalWeapons.MachineGun);
             Message.GetComponent<Text>().text = "Data Saved";
