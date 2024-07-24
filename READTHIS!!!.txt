@@ -1,1 +1,0 @@
-Nếu source code mở không được hãy vào SourceCode\FPS Denblyn 3D Game\Library giải nén file ArtifactDB.zip
