@@ -3109,7 +3109,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Out door compelted
+  m_Text: Out door completed
 --- !u!222 &616165485
 CanvasRenderer:
   m_ObjectHideFlags: 0
