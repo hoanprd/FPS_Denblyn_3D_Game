@@ -7,7 +7,10 @@ public class SoldierAI : MonoBehaviour
     public string hitTag;
     public bool lookingAtPlayer = false;
     public GameObject theSoldier;
-    public GameObject hurtFlash;
+    //public GameObject hurtFlash;
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+    public float bulletSpeed;
     public AudioSource fireSound;
     public bool isFiring = false;
     public float fireRate = 0.2f;
@@ -25,7 +28,7 @@ public class SoldierAI : MonoBehaviour
         }
         if (hitTag == "Player" && isFiring == false)
         {
-            StartCoroutine(EnemyFire());
+            StartCoroutine(EnemyFire2());
         }
         else if (hitTag != "Player")
         {
@@ -34,7 +37,7 @@ public class SoldierAI : MonoBehaviour
         }
     }
 
-    IEnumerator EnemyFire()
+    /*IEnumerator EnemyFire()
     {
         isFiring = true;
         theSoldier.GetComponent<Animator>().Play("demo_combat_shoot", -1, 0);
@@ -52,17 +55,26 @@ public class SoldierAI : MonoBehaviour
 
             hurtFlash.SetActive(false);
         }
-        else
-        {
-            //null
-        }
-        /*GlobalHealth.healthValue -= 5;
-        getHurt = Random.Range(0, 3);
-        hurtSound[getHurt].Play();
-        hurtFlash.SetActive(true);
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(fireRate);
 
-        hurtFlash.SetActive(false);*/
+        isFiring = false;
+    }*/
+
+    IEnumerator EnemyFire2()
+    {
+        isFiring = true;
+
+        // Animation + sound
+        theSoldier.GetComponent<Animator>().Play("demo_combat_shoot", -1, 0);
+        theSoldier.GetComponent<Animator>().Play("demo_combat_shoot");
+        fireSound.Play();
+        lookingAtPlayer = true;
+
+        // Instantiate bullet
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Vector3 shootDir = firePoint.forward;
+        bullet.GetComponent<EnemyBullet>().Init(shootDir, bulletSpeed);
+
         yield return new WaitForSeconds(fireRate);
 
         isFiring = false;
