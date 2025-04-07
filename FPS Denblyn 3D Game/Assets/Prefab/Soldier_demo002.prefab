@@ -1397,11 +1397,10 @@ MonoBehaviour:
   hitTag: 
   lookingAtPlayer: 0
   theSoldier: {fileID: 1176154496331855686}
-  hurtFlash: {fileID: 0}
   bulletPrefab: {fileID: 539908162539856063, guid: 3209be4f122683c4a9cf48ea7f51a402, type: 3}
   firePoint: {fileID: 8396207056098123381}
   bulletSpeed: 15
-  fireSound: {fileID: 0}
+  fireSound: {fileID: 4077113894375883796}
   isFiring: 0
   fireRate: 0.1
   getHurt: 0

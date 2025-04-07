@@ -703,8 +703,8 @@ MonoBehaviour:
   theSoldier: {fileID: 4747385565533063899}
   bulletPrefab: {fileID: 539908162539856063, guid: 3209be4f122683c4a9cf48ea7f51a402, type: 3}
   firePoint: {fileID: 8964490310491052149}
-  bulletSpeed: 0
-  fireSound: {fileID: 0}
+  bulletSpeed: 10
+  fireSound: {fileID: 1213592663392078363}
   isFiring: 0
   fireRate: 0.2
   getHurt: 0
