@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &60148745068378210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2657550535561995799}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2657550535561995799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60148745068378210}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.2777778, y: 1.9444445, z: 1.388889}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796030528332069074}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779349146863489711
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,7 +240,9 @@ MonoBehaviour:
   hitTag: 
   lookingAtPlayer: 0
   theSoldier: {fileID: 6376649080942738876}
-  hurtFlash: {fileID: 0}
+  bulletPrefab: {fileID: 539908162539856063, guid: 3209be4f122683c4a9cf48ea7f51a402, type: 3}
+  firePoint: {fileID: 2657550535561995799}
+  bulletSpeed: 10
   fireSound: {fileID: 330338729040088202}
   isFiring: 0
   fireRate: 0.2
@@ -818,6 +851,7 @@ Transform:
   - {fileID: 5032933527477777727}
   - {fileID: 3666580591424369517}
   - {fileID: 6171890578664836901}
+  - {fileID: 2657550535561995799}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &5002478293069008588

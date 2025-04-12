@@ -32,10 +32,10 @@ public class EnemyBullet : MonoBehaviour
             GlobalHealth.healthValue -= 5;
             Destroy(gameObject);
         }
-        else if (!other.CompareTag("Player"))
+        /*else if (!other.CompareTag("Player"))
         {
             Destroy(gameObject);
-        }
+        }*/
     }
 
     IEnumerator DestroyBullet()

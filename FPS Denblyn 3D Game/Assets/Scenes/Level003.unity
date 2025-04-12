@@ -6712,6 +6712,14 @@ PrefabInstance:
       propertyPath: hurtFlash
       value: 
       objectReference: {fileID: 1712371986}
+    - target: {fileID: 8174414536744874893, guid: 610f6d4a5708abf4d8f3b5432d06101c, type: 3}
+      propertyPath: bulletSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8174414536744874893, guid: 610f6d4a5708abf4d8f3b5432d06101c, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 539908162539856063, guid: 3209be4f122683c4a9cf48ea7f51a402, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
