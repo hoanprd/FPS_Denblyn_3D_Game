@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,43 +20,43 @@ public class Dia7 : MonoBehaviour
 
         if (dem == 1)
         {
-            DiaText.GetComponent<Text>().text = "Morro: Alia! Can you hear me!";
+            DiaText.GetComponent<Text>().text = "Morro: Alia! Bạn có nghe thấy tôi không!";
         }
         if (dem == 2)
         {
-            DiaText.GetComponent<Text>().text = "Alia: Yes! I can hear you!";
+            DiaText.GetComponent<Text>().text = "Alia: Có! Tôi có thể nghe thấy bạn!";
         }
         if (dem == 3)
         {
-            DiaText.GetComponent<Text>().text = "Morro: I have successfully rescued the children!";
+            DiaText.GetComponent<Text>().text = "Morro: Tôi đã giải cứu thành công bọn trẻ!";
         }
         if (dem == 4)
         {
-            DiaText.GetComponent<Text>().text = "Alia: That's great, the helicopter will be there in a few minutes!";
+            DiaText.GetComponent<Text>().text = "Alia: Tuyệt quá, trực thăng sẽ tới đó trong vài phút nữa!";
         }
         if (dem == 5)
         {
-            DiaText.GetComponent<Text>().text = "Morro: Oh, I see.";
+            DiaText.GetComponent<Text>().text = "Morro: Ồ, tôi hiểu rồi.";
         }
         if (dem == 6)
         {
-            DiaText.GetComponent<Text>().text = "Helicopter sound";
+            DiaText.GetComponent<Text>().text = "Tiếng trực thăng";
         }
         if (dem == 7)
         {
-            DiaText.GetComponent<Text>().text = "Morro: This isn't the end after all, these kids are still being used as weapons for the end of the world war.";
+            DiaText.GetComponent<Text>().text = "Morro: Đây chưa phải là kết thúc, những đứa trẻ này vẫn đang bị sử dụng làm vũ khí cho mục đích kết thúc chiến tranh thế giới.";
         }
         if (dem == 8)
         {
-            DiaText.GetComponent<Text>().text = "Soldier: Are you okay, Morro! I didn't expect you to complete the impossible mission!";
+            DiaText.GetComponent<Text>().text = "Người lính đồng minh: Cậu ổn chứ, Morro! Tôi không ngờ cậu lại hoàn thành được nhiệm vụ bất khả thi này!";
         }
         if (dem == 9)
         {
-            DiaText.GetComponent<Text>().text = "Morro: Yeah, I'm fine. (The battle is just beginning)";
+            DiaText.GetComponent<Text>().text = "Morro: Vâng, tôi ổn. (Trận chiến chỉ mới bắt đầu)";
         }
         if (dem == 10)
         {
-            DiaText.GetComponent<Text>().text = "The End!";
+            DiaText.GetComponent<Text>().text = "Kết thúc!";
         }
         if (dem == 11)
         {
