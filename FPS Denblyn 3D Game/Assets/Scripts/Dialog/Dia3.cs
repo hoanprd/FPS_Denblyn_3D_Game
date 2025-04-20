@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,23 +19,23 @@ public class Dia3 : MonoBehaviour
 
         if (dem == 1)
         {
-            DiaText.GetComponent<Text>().text = "Morro: Alia! Is it clearer yet?";
+            DiaText.GetComponent<Text>().text = "Morro: Alia! Đã rõ hơn chưa?";
         }
         if (dem == 2)
         {
-            DiaText.GetComponent<Text>().text = "Alia: I heard it.";
+            DiaText.GetComponent<Text>().text = "Alia: Tôi nghe rồi.";
         }
         if (dem == 3)
         {
-            DiaText.GetComponent<Text>().text = "Morro: Good! I've reached the castle's ground floor, there seem to be a lot of soldiers here.";
+            DiaText.GetComponent<Text>().text = "Morro: Tốt! Tôi đã đến tầng trệt của lâu đài, có vẻ như có rất nhiều lính ở đây.";
         }
         if (dem == 4)
         {
-            DiaText.GetComponent<Text>().text = "Alia: So you think they really make weapons of war?";
+            DiaText.GetComponent<Text>().text = "Alia: Vậy bạn nghĩ họ thực sự sản xuất vũ khí chiến tranh sao?";
         }
         if (dem == 5)
         {
-            DiaText.GetComponent<Text>().text = "Morro: Yes, I will look for evidence as well as documents about this.";
+            DiaText.GetComponent<Text>().text = "Morro: Vâng, tôi sẽ tìm kiếm bằng chứng cũng như tài liệu về việc này.";
         }
         if (dem == 6)
         {

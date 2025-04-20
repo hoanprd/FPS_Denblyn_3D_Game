@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,31 +19,31 @@ public class Dia5 : MonoBehaviour
 
         if (dem == 1)
         {
-            DiaText.GetComponent<Text>().text = "Morro: Alia, how's it going?";
+            DiaText.GetComponent<Text>().text = "Morro: Alia, mọi việc thế nào rồi?";
         }
         if (dem == 2)
         {
-            DiaText.GetComponent<Text>().text = "Alia: I sent a helicopter to pick you up.";
+            DiaText.GetComponent<Text>().text = "Alia: Tôi đã cử một chiếc trực thăng tới đón anh.";
         }
         if (dem == 3)
         {
-            DiaText.GetComponent<Text>().text = "Morro: Good, I got to the top floor as well as heard those children crying loudly.";
+            DiaText.GetComponent<Text>().text = "Morro: Tốt, tôi đã lên đến tầng cao nhất và nghe thấy tiếng trẻ con khóc rất to.";
         }
         if (dem == 4)
         {
-            DiaText.GetComponent<Text>().text = "Alia: They are so cruel!";
+            DiaText.GetComponent<Text>().text = "Alia: Họ thật tàn nhẫn!";
         }
         if (dem == 5)
         {
-            DiaText.GetComponent<Text>().text = "Morro: I hang up, there are dozens of enemies outside waiting for me.";
+            DiaText.GetComponent<Text>().text = "Morro: Tôi cúp máy, có hàng chục kẻ thù đang đợi tôi ở bên ngoài.";
         }
         if (dem == 6)
         {
-            DiaText.GetComponent<Text>().text = "Alia: Don't die!";
+            DiaText.GetComponent<Text>().text = "Alia: Đừng chết!";
         }
         if (dem == 7)
         {
-            DiaText.GetComponent<Text>().text = "Morro: I won't die until the children are free.";
+            DiaText.GetComponent<Text>().text = "Morro: Tôi sẽ không chết cho đến khi bọn trẻ được tự do.";
         }
         if (dem == 8)
         {
