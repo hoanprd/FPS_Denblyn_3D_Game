@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,7 +35,7 @@ public class MachineGunPickUp : MonoBehaviour
     {
         IsPickUp = true;
         Message.SetActive(true);
-        Message.GetComponent<Text>().text = "Press 'F' to pick up";
+        Message.GetComponent<Text>().text = "Nhấn 'F' để nhặt";
     }
     private void OnTriggerExit(Collider other)
     {

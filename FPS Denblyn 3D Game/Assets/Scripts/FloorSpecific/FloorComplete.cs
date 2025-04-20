@@ -14,10 +14,13 @@ public class FloorComplete : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        floorTimer.SetActive(false);
-        thePlayer.GetComponent<FirstPersonController>().enabled = false;
-        this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        StartCoroutine(CompletedFloor());
+        if (other.gameObject.tag == "Player")
+        {
+            floorTimer.SetActive(false);
+            thePlayer.GetComponent<FirstPersonController>().enabled = false;
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            StartCoroutine(CompletedFloor());
+        }
     }
 
     IEnumerator CompletedFloor()

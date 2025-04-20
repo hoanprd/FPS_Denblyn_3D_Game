@@ -53873,7 +53873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b78c736431dcbe4aaa3d3c6335f61fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 1768840851}
 --- !u!1 &843644864
 GameObject:
   m_ObjectHideFlags: 0
@@ -104285,7 +104285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55743eb96f10ce448be7f1b7b52003cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 1768840851}
 --- !u!65 &1607365510
 BoxCollider:
   m_ObjectHideFlags: 0

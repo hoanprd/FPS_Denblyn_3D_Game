@@ -1,7 +1,8 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class Generator001 : MonoBehaviour
 {
@@ -20,7 +21,8 @@ public class Generator001 : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.F) && IsActive == true && VisaCardPickUp.CardActived == false)
         {
-            Message.GetComponent<Text>().text = "You need the visa card!";
+            //Message.GetComponent<Text>().text = "You need the visa card!";
+            Message.GetComponent<Text>().text = "Cần thẻ visa để kích hoạt!";
         }
     }
 
@@ -36,12 +38,15 @@ public class Generator001 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        IsActive = true;
-        Message.SetActive(true);
-        if (Actived == false)
-            Message.GetComponent<Text>().text = "Press 'F' to active the elevator";
-        else
-            Message.GetComponent<Text>().text = "Elevator actived";
+        if (other.gameObject.tag == "Player")
+        {
+            IsActive = true;
+            Message.SetActive(true);
+            if (Actived == false)
+                Message.GetComponent<Text>().text = "Nhấn 'F' để kích hoạt thang máy";
+            else
+                Message.GetComponent<Text>().text = "Thang máy đã kích hoạt!";
+        }
     }
 
     private void OnTriggerExit(Collider other)

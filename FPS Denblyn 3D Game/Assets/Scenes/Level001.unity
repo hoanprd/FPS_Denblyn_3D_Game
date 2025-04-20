@@ -3885,7 +3885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldIngots: {fileID: 131349813}
   Message: {fileID: 1523641294}
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 814416829}
 --- !u!65 &131349815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25572,7 +25572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b78c736431dcbe4aaa3d3c6335f61fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 814416825}
 --- !u!1 &843265078
 GameObject:
   m_ObjectHideFlags: 0
@@ -31749,7 +31749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldIngots: {fileID: 1062831787}
   Message: {fileID: 1523641294}
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 814416829}
 --- !u!1 &1063977588
 GameObject:
   m_ObjectHideFlags: 0
@@ -40001,7 +40001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldIngots: {fileID: 1290443147}
   Message: {fileID: 1523641294}
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 814416829}
 --- !u!65 &1290443149
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49043,7 +49043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55743eb96f10ce448be7f1b7b52003cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 814416825}
 --- !u!65 &1607365510
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53222,7 +53222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldIngots: {fileID: 1760423662}
   Message: {fileID: 1523641294}
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 814416829}
 --- !u!65 &1760423664
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56526,7 +56526,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldIngots: {fileID: 1897556921}
   Message: {fileID: 1523641294}
-  collectSound: {fileID: 0}
+  collectSound: {fileID: 814416829}
 --- !u!65 &1897556923
 BoxCollider:
   m_ObjectHideFlags: 0

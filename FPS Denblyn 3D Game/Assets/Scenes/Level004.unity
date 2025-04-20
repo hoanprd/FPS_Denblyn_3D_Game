@@ -7189,7 +7189,7 @@ MonoBehaviour:
   Image2: {fileID: 462575971}
   Dialog6: {fileID: 297811460}
   DiaText: {fileID: 1650883543}
-  thePlayer: {fileID: 0}
+  thePlayer: {fileID: 869509956}
   FB: {fileID: 76081511}
   IsActive: 0
   dem: 1
@@ -18110,19 +18110,19 @@ PrefabInstance:
     - target: {fileID: 2362413761061939855, guid: 93f14a69a3c642549b803fe471a21c73, type: 3}
       propertyPath: BullEye
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 348236364}
     - target: {fileID: 2362413761061939855, guid: 93f14a69a3c642549b803fe471a21c73, type: 3}
       propertyPath: BullEyeBig
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 873473068}
     - target: {fileID: 4824267691052427191, guid: 93f14a69a3c642549b803fe471a21c73, type: 3}
       propertyPath: BullEye
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 348236364}
     - target: {fileID: 4824267691052427191, guid: 93f14a69a3c642549b803fe471a21c73, type: 3}
       propertyPath: BullEyeBig
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 873473068}
     - target: {fileID: 6182971489178829548, guid: 93f14a69a3c642549b803fe471a21c73, type: 3}
       propertyPath: AK47Image
       value: 

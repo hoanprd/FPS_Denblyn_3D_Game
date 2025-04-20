@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class Door004OpenFirst : MonoBehaviour
@@ -9,10 +10,13 @@ public class Door004OpenFirst : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        doorFX.Play();
-        theDoor.GetComponent<Animator>().Play("door_2_open");
-        this.GetComponent<BoxCollider>().enabled = false;
-        StartCoroutine(CloseDoor());
+        if (other.gameObject.tag == "Player")
+        {
+            doorFX.Play();
+            theDoor.GetComponent<Animator>().Play("door_2_open");
+            this.GetComponent<BoxCollider>().enabled = false;
+            StartCoroutine(CloseDoor());
+        }
     }
 
     IEnumerator CloseDoor()

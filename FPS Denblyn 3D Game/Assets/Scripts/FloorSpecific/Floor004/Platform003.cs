@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,11 +24,11 @@ public class Platform003 : MonoBehaviour
         {
             Actived = true;
             Plat003.GetComponent<Animator>().enabled = true;
-            Message.GetComponent<Text>().text = "Elevator actived";
+            Message.GetComponent<Text>().text = "Thang máy đã kích hoạt!";
         }
         else if (Input.GetKeyUp(KeyCode.F) && IsActive == true && CP.Actived == false)
         {
-            Message.GetComponent<Text>().text = "You need to active the control panel";
+            Message.GetComponent<Text>().text = "Cần kích hoạt bảng điều khiển!";
         }
     }
 
@@ -37,9 +37,9 @@ public class Platform003 : MonoBehaviour
         IsActive = true;
         Message.SetActive(true);
         if (Actived == false)
-            Message.GetComponent<Text>().text = "Press 'F' to active the elevator";
+            Message.GetComponent<Text>().text = "Nhấn 'F' để kích hoạt thang máy";
         else
-            Message.GetComponent<Text>().text = "Elevator actived";
+            Message.GetComponent<Text>().text = "Thang máy đã kích hoạt!";
     }
 
     private void OnTriggerExit(Collider other)

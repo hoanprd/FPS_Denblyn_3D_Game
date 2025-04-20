@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,7 +16,7 @@ public class Generator002 : MonoBehaviour
         {
             Actived = true;
             Platform002.Gen1 = true;
-            Message.GetComponent<Text>().text = "Generator actived";
+            Message.GetComponent<Text>().text = "Máy phát đã kích hoạt!";
         }
     }
 
@@ -38,12 +38,15 @@ public class Generator002 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        IsActive = true;
-        Message.SetActive(true);
-        if (Actived == false)
-            Message.GetComponent<Text>().text = "Press 'F' to active the generator";
-        else
-            Message.GetComponent<Text>().text = "Generator actived";
+        if (other.gameObject.tag == "Player")
+        {
+            IsActive = true;
+            Message.SetActive(true);
+            if (Actived == false)
+                Message.GetComponent<Text>().text = "Nhấn 'F' để kích hoạt máy phát";
+            else
+                Message.GetComponent<Text>().text = "Máy phát đã kích hoạt!";
+        }
     }
 
     private void OnTriggerExit(Collider other)

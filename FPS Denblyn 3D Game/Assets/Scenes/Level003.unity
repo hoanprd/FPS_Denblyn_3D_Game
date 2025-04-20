@@ -7725,6 +7725,14 @@ PrefabInstance:
       propertyPath: BullEyeBig
       value: 
       objectReference: {fileID: 1534493610}
+    - target: {fileID: 6182971489178829548, guid: 93f14a69a3c642549b803fe471a21c73, type: 3}
+      propertyPath: AK47Image
+      value: 
+      objectReference: {fileID: 1315451560}
+    - target: {fileID: 6182971489178829548, guid: 93f14a69a3c642549b803fe471a21c73, type: 3}
+      propertyPath: pistolImage
+      value: 
+      objectReference: {fileID: 266897978}
     - target: {fileID: 7142863382275629102, guid: 93f14a69a3c642549b803fe471a21c73, type: 3}
       propertyPath: m_IsActive
       value: 0
