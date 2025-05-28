@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,7 +26,7 @@ public class SaveGameTrigger : MonoBehaviour
             PlayerPrefs.SetInt("CMGAmmoSaved", GlobalAmmo.CurmachinegunAmmo);
             PlayerPrefs.SetInt("HandGunSaved", GlobalWeapons.HandGun);
             PlayerPrefs.SetInt("MachineGunSaved", GlobalWeapons.MachineGun);
-            Message.GetComponent<Text>().text = "Data Saved";
+            Message.GetComponent<Text>().text = "Dữ liệu đã lưu!";
         }
     }
 
@@ -34,7 +34,7 @@ public class SaveGameTrigger : MonoBehaviour
     {
         IsActive = true;
         Message.SetActive(true);
-        Message.GetComponent<Text>().text = "Press F to save game";
+        Message.GetComponent<Text>().text = "Nhấn 'F' để lưu game";
     }
 
     private void OnTriggerExit(Collider other)
